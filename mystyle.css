@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-container, .cart , nav-links{
+    display: flex;
+}
+
+.logo{
+    font-weight: 500;
+    margin: .5em;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 17px;
+}
+
+.nav-links a{
+    color: #5f5f79;
+    text-decoration: none;
+    
+}
+
+
+.logo-container{
+    flex: 1;
+}
+
+
+
+nav{
+    
+    flex: 2;
+
+}
+
+.cart{
+
+    justify-content: flex-end;
+    flex: 1;
+   
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+.cta-select{
+    border: 2px solid #c35cbb;
+    background: transparent;
+    color: #c35cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.cta-add{
+
+    border: 2px solid #c35cbb;
+    background: #c35cbb;
+    color:white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin: 30px 0px 0px 30px;
+
+
+}
+.cta{
+    padding: 50px 0px 
+    0px 0px;
+}
+
+.cover{
+    flex: 1;
+}
+
+.cover img{
+    height: 40vh;
+    filter: drop-shadow(0px 20px 3px black);
+    animation: henok 5s ease;
+}
+
+.big-circle{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: .7;
+    height: 80%;
+}
+
+.mid-circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    height: 60%;
+}
+
+.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+
+}
+
+.laptop-select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+}
+
+@keyframes henok {
+
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+
+}
+
+@media screen and (max-width:1024){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cta{
+        padding: 10px 0px 0px 0px;
+    }
+}
